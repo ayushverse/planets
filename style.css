@@ -66,3 +66,36 @@ body {
 #astronaut img {
   height: 600px;
 }
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .details {
+    width: 100%;
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  #astronaut img {
+    height: 300px;
+    width: auto;
+  }
+
+  .navbar {
+    justify-content: center;
+    padding-right: 0;
+    font-size: 20px;
+  }
+
+  .moon {
+    margin-top: 20px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
