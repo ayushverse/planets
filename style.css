@@ -40,8 +40,8 @@ body {
   padding-left: 200px;
 }
 
-.moon a:hover{
-    transform: rotate(360);
+.moon :hover{
+    transform: rotate(180deg);
 }
 
 .hero-section {
