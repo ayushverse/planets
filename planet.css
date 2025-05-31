@@ -1,0 +1,76 @@
+body {
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+#background {
+  background-image: url(peakpx.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  filter: brightness(30%);
+}
+
+.moon{
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.moon :hover{
+    cursor: pointer;
+}
+
+.mercury{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  margin-right: 80px;
+}
+
+.info{
+  display: flex;
+  gap: 275px;
+}
+
+.planet-icons {
+  position: fixed;
+  bottom: 40px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+  align-items: center;
+}
+
+.planet-icons::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1; 
+}
+
+.planet-icons img {
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+}
+
+.planet-icons img:hover {
+  transform: scale(1.2);
+}
